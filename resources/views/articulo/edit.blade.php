@@ -1,0 +1,53 @@
+@extends('adminlte::page')
+
+@section('title', 'CRUD Laravel 8')
+
+@section('content_header')
+    <h1>Editar Registro</h1>
+@stop
+
+@section('content')
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/articulos/{{ $articulo->id }}" method="POST">
+                            @csrf
+                            @method('PUT')
+                            <div class="mb-3">
+                                <label for="codigo" class="form-label">Codigo</label>
+                                <input type="text" class="form-control" id="codigo" name="codigo"
+                                    value="{{ $articulo->codigo }}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="descripcion" class="form-label">Descripcion</label>
+                                <input type="text" class="form-control" id="descripcion" name="descripcion"
+                                    value="{{ $articulo->descripcion }}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="cantidad" class="form-label">Cantidad</label>
+                                <input type="number" class="form-control" id="cantidad" name="cantidad"
+                                    value="{{ $articulo->cantidad }}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="precio" class="form-label">Precio</label>
+                                <input type="number" class="form-control" id="precio" name="precio"
+                                    value="{{ $articulo->precio }}">
+                            </div>
+                            <a href="/articulos" class="btn btn-secondary" role="button">Cancelar</a>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@stop
+
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop
+
+@section('js')
+@stop
