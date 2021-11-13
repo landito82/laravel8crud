@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/sarsappc/public_html/laravel8crud/
+    - export DEPLOYPATH=/home/sarsappc/public_html/lan2/pruebas/laravel8crud/
     - /bin/rsync -av public/ $DEPLOYPATH
