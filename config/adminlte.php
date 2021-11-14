@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'CRUDS Laravel 8',
+    'title' => 'CRUD Laravel 8',
     'title_prefix' => '',
     'title_postfix' => '',
 
