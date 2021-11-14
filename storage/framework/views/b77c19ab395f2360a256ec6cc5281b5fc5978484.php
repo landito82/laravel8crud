@@ -72,9 +72,9 @@
             </div>
         </div>
         <div class="text-center mt-3">
-            <h4>DEMO</h4>
+            <h5>DEMO</h5>
             <p><b>Email:</b> demo@demo.com<br><b>Pass:</b> Demo1234</p>
-            <h4>MORE INFO</h4>
+            <h5>MORE INFO</h5>
             <p><b>WhatsApp:</b> (849) 244-9399</p>
         </div>
     </form>
